@@ -2,9 +2,11 @@
 import { Disclosure } from "@headlessui/react";
 import { HiBars3, HiMiniXMark } from "react-icons/hi2";
 import Link from "next/link";
-import { company, navigation } from "@/app/config/index.json";
+import config from "@/app/config/index.json";
 
 export default function Header() {
+  const navigation = config.navigation;
+  const company = config.company;
   return (
     <Disclosure as="nav" className="bg-white shadow-sm">
       {({ open }) => (

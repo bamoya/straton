@@ -1,8 +1,9 @@
-import { company } from "@/app/config/index.json";
+import config from "@/app/config/index.json";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const company = config.company;
   return (
     <div className="text-gray-600 body-font">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

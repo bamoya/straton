@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { mainHero } from "@/app/config/index.json";
+import config from "@/app/config/index.json";
 
 const Hero = () => {
+  const mainHero = config.mainHero;
   const title = mainHero.title;
   const description = mainHero.description;
   const button = mainHero.buttonAction;

@@ -1,7 +1,8 @@
 "use client";
-import { contact } from "@/app/config/index.json";
+import config from "@/app/config/index.json";
 
 const Contactus = () => {
+  const contact = config.contact;
   return (
     <section className="text-gray-600 body-font relative">
       <div className="container px-5 py-24 mx-auto">
@@ -86,7 +87,9 @@ const Contactus = () => {
                 </label>
                 <select className="h-10 w-full text-right bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   {contact.serviceInput.options.map((option, idx) => (
-                    <option value={option}>{option}</option>
+                    <option key={idx} value={option}>
+                      {option}
+                    </option>
                   ))}
                 </select>
               </div>

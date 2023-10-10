@@ -1,6 +1,7 @@
-import { services } from "@/app/config/index.json";
+import config from "@/app/config/index.json";
 
 const Services = () => {
+  const services = config.services;
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-12 mx-auto">
