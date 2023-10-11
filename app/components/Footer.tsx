@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   const company = config.company;
   return (
-    <div className="text-gray-600 body-font">
+    <div className="text-gray-600 bg-gray-100 border-t-2 border-gray-300 body-font">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <Link
           href={"#"}

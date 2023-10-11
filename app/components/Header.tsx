@@ -35,9 +35,9 @@ export default function Header() {
                     src={company.logo}
                     alt={company.name}
                   />
-                  <h1 className="text-xl font-semibold text-neutral uppercase  md:block ">
+                  {/* <h1 className="text-xl font-semibold text-neutral uppercase  md:block ">
                     {company.name}
-                  </h1>
+                  </h1> */}
                 </Link>
                 <div className="hidden md:ml-6 md:block">
                   <div className="flex flex-row-reverse text-right gap-6 ">
@@ -46,7 +46,7 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={
-                          "text-gray-900 block hover:text-orange-500  text-base font-meduim "
+                          "text-gray-900 font-meduim text-xl block hover:text-orange-500   font-meduim "
                         }
                       >
                         {item.name}
@@ -59,7 +59,7 @@ export default function Header() {
           </div>
 
           <Disclosure.Panel className="md:hidden">
-            <div className="space-y-5 px-2 pb-3 pt-2 text-center">
+            <div className="space-y-5 px-2 pb-3 pt-2 text-center z-50">
               {navigation.map((item, index) => (
                 <Link
                   key={item.name}
