@@ -13,7 +13,7 @@ const Testimonial = () => {
             {testimonial.description}
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 -m-4">
+        <div className="flex flex-wrap justify-center gap-4 px-4 sm:px-0 -m-4">
           {testimonial.items.map((item, idx) => (
             <div
               key={idx}

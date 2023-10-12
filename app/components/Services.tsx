@@ -9,11 +9,11 @@ const Services = () => {
           <h1 className="sm:text-5xl text-3xl font-medium title-font text-gray-900 mb-4">
             {services.title}
           </h1>
-          <p className="text-base sm:text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+          <p className="text-base sm:text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
             {services.description}
           </p>
         </div>
-        <div className="flex flex-wrap justify-center sm:-m-4 -mx-4 sm:-mb-10 -mt-4 gap-4   md:space-y-0 mb-2">
+        <div className="flex flex-wrap justify-center sm:-m-4 -mx-4 sm:-mb-10 -mt-4 gap-4 px-4 sm:px-0 md:space-y-0 mb-2">
           {services.items.map((item, idx) => (
             <div
               key={idx}

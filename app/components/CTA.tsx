@@ -9,10 +9,10 @@ const CTA = () => {
 
       <div className="relative container px-5 py-5 md:py-16 mx-auto opacity-100 ">
         <div className="flex flex-col items-center text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900">
             {cta.title}
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="text-base sm:text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white">
             {cta.description}
           </p>
           <Link
