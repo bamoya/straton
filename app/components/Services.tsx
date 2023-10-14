@@ -4,7 +4,7 @@ const Services = () => {
   const services = config.services;
   return (
     <section id="services" className="text-gray-700  bg-gray-100  body-font">
-      <div className="container px-5 py-5  md:py-24 mx-auto">
+      <div className="container px-5 py-12  md:py-24 mx-auto">
         <div className="text-center  mb-20">
           <h1 className="sm:text-5xl text-4xl font-bold  title-font text-gray-900 mb-4">
             {services.title}

@@ -6,7 +6,7 @@ const Hero = () => {
   const mainHero = config.mainHero;
   return (
     <section id="home" className="text-gray-600 body-font text-right ">
-      <div className="container mx-auto flex px-5 py-5 md:py-24 md:flex-row flex-col-reverse items-center">
+      <div className="container mx-auto flex px-5 py-12 md:py-24 md:flex-row flex-col-reverse items-center">
         <div className="lg:max-w-xl lg:w-full md:w-1/2 w-full mt-10 md:mt-0">
           {/* <img
             className="object-cover object-center rounded"

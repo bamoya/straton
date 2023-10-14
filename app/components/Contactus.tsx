@@ -64,7 +64,7 @@ const Contactus = () => {
       id="contact"
       className="text-gray-600 bg-gray-100 body-font relative"
     >
-      <div className="container px-5 py-5 md:py-24 mx-auto">
+      <div className="container px-5 py-12 md:py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-5xl text-4xl font-bold  title-font mb-4 text-gray-900">
             {contact.title}
@@ -190,6 +190,12 @@ const Contactus = () => {
                         border: "default",
                       },
                     }),
+                    placeholder: (defaultStyles) => {
+                      return {
+                        ...defaultStyles,
+                        color: "rgb(156 163 175)",
+                      };
+                    },
                   }}
                   classNamePrefix="select"
                 />
@@ -261,7 +267,14 @@ const Contactus = () => {
                         border: "default",
                       },
                     }),
+                    placeholder: (defaultStyles) => {
+                      return {
+                        ...defaultStyles,
+                        color: "rgb(156 163 175)",
+                      };
+                    },
                   }}
+                  closeMenuOnSelect={false}
                   classNamePrefix="select"
                 />
               </div>

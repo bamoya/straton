@@ -4,7 +4,7 @@ const Testimonial = () => {
   const testimonial = config.testimonial;
   return (
     <section id="testimonial" className="text-gray-600 bg-white body-font">
-      <div className="container px-5 py-5 md:py-24  mx-auto">
+      <div className="container px-5 py-12 md:py-24  mx-auto">
         <div className="text-center mb-20">
           <h1 className="sm:text-5xl text-4xl font-bold title-font text-gray-900 mb-4">
             {testimonial.title}

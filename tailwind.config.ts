@@ -10,6 +10,9 @@ const config: Config = {
   plugins: [],
   theme: {
     extend: {
+      fontFamily: {
+        messiri: ["El Messiri", "sans-serif"],
+      },
       colors: {
         gray: {
           100: "#fbf9f9",
