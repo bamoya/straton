@@ -8,6 +8,14 @@ const config: Config = {
   ],
 
   plugins: [],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        gray: {
+          100: "#fbf9f9",
+        },
+      },
+    },
+  },
 };
 export default config;

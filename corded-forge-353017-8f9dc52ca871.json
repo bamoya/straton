@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "corded-forge-353017",
+  "private_key_id": "8f9dc52ca871fa8c8dacf879c4789a08b0c64bdf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDMY50WJKFPDYG6\ne1kdLkEDs8OYiZcrlbifJqHmheykOGzJ4nB8c/Jc9WqPmq87cG0TKtjBwl+Es5MZ\nHYMXVUFSscoias6fXfvLL6t1vEv3B/I9htv1JzehxdxVYXMfgD0zN/mVgUhXVmCt\nEjjZSgroNfKipHXGXgr9zD26VZmQOC826pV1BORbFHjrOlyiyv3YzH+z9wOcuDmS\nYgB8hZWjG+uFcl44zbHPT/DRr4Hg8NlpfnYrUp7Ywvkluc9NXBl6grXrg99HFNFV\nnmJ2l8tkwdKWUW2jbW127jhw4xpds7uvicON7Cg5sJCI6thN4hxXbAIuIMbOqorm\nN3/o4WDjAgMBAAECggEAOgPqgm8KVKCeWrsJfAV1keH0WrdvcAEzIwW5ve/00FZt\n1s5OJJ1axbUptrJvG/2ZEHBAj5snNsksL1xXqgdan+j0WdmcZdMtFislTamRnICm\na318sPUdTu+VT6z2GxJxDLlOQHguew/7KBU8ir0AJJKvmSf6gECQeSMAwIPsr2kp\nQtPDGyxfuhf+Z4sHsm/HpRyIsjYfKbbmDgWTZ1GPw0VZQ7BY+C627lAwMo4lg0BU\nbBXoQeb2jyw7vY58H/cO09TlSmwU4jhI/pYXe6XzrwnpDXOo55tHxsODP/mki+dp\n1X2vqF+BKloQskrPSiXL3fWiKdw8/s2X4gSsNyOxWQKBgQDwsnIilmJ0Jp5ds7+6\nwxCL+CM//LcfYtAe7NmygLpt5qnp/DfUdsA2WVNQ1LL57C/ymXlqxIPUFt5sJ4V4\nQHdJr0/I1nyxv8ojcR83o8rJt6tgQn7cKPZLH2pKvoWB/a3wCqDw2ogmJRjJFEQC\nE2arEONaklYxgf5o1oGvsFzB2QKBgQDZYjl2e6QK+2OVTx2PMy3M3SSAFtOKld/g\nuaSpUhmRUT2ynODw698htRiIhzsMjqpSxf8p4toK6z/MVWbULaaXbYOKMaBambWT\njDqNEGtSe/wq5lidcoI0+zghJQWTZk4r2k+ggSibDmdkiE2cyAFV70H+f9RCdENl\n3PoyyKwHGwKBgQDPo6ECZWkZehc0DlRf8NbdaHpAQOpYkQ2pH/nNG2+4TzxVNdeT\n2b2HJRfSqyqanz3dsrgjetOeqvvFoXJqgnJlhm71etKnJCRk3rlnbk0KJwAYUkTN\n+ChANiGjySezM/xRD1o3bM322hm/nVPt1n7DJBZ9k6/3lYS7PBE0VpguQQKBgFuN\nK6hDwD3DzBfo3wkdQ8/A3wt3EZaPMl+Br+CDrDLwZSyhN3cfz7RxgaiWU38hYohD\nzQgF+1CX7SGQYiNAKqYhwEFmTyN5EujWKR6Z6KkvgG9M3ctJm57WorgK0INYldmQ\nMvLlEoXjFhZX9V/vN+jKQCAAFBP8xRnUbCcRLqo7AoGALSjDesJi2YDVwB4VsPMN\n2rMpIdNNOp373bLfVAP9tAaQZFfBilQkAR12mFqwubKV8jlyn+Sr4DE7SS84TJse\nkctXI/rzXaRDr4Q+pkpYQfAdmLVlqiaFQ+GFWrEVxogMNy2SpQemSeD8MWKGpPzR\nBllmXmKYkHSS60MLP41cqPU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "straton@corded-forge-353017.iam.gserviceaccount.com",
+  "client_id": "113812406827269530558",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/straton%40corded-forge-353017.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

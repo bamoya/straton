@@ -1,12 +1,15 @@
 "use client";
+import { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { HiBars3, HiMiniXMark } from "react-icons/hi2";
 import Link from "next/link";
 import config from "@/app/config/index.json";
+import { BiSearch } from "react-icons/bi";
 
 export default function Header() {
   const navigation = config.navigation;
   const company = config.company;
+  const [isopen, setIsOpen] = useState<boolean>(false);
   return (
     <Disclosure as="nav" className="bg-white shadow-sm">
       {({ open }) => (
@@ -19,19 +22,31 @@ export default function Header() {
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <HiMiniXMark className="block h-6 w-6" aria-hidden="true" />
+                    <div>
+                      <HiMiniXMark
+                        className="block h-6 w-6"
+                        aria-hidden="true"
+                      />
+                    </div>
                   ) : (
-                    <HiBars3 className="block h-6 w-6" aria-hidden="true" />
+                    <div onClick={() => setIsOpen(!isopen)}>
+                      <HiBars3
+                        onClick={() => setIsOpen(!isopen)}
+                        className="block h-6 w-6"
+                        aria-hidden="true"
+                      />
+                    </div>
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-between ">
+              <div className="flex flex-1 items-center justify-between px-2 ">
+                <BiSearch className="block sm:hidden h-10 w-10 text-gray-900" />
                 <Link
                   href="/"
                   className="flex flex-shrink-0 gap-2 items-center"
                 >
                   <img
-                    className="h-12 w-auto"
+                    className="h-16 w-auto"
                     src={company.logo}
                     alt={company.name}
                   />
@@ -39,6 +54,7 @@ export default function Header() {
                     {company.name}
                   </h1> */}
                 </Link>
+                <div></div>
                 <div className="hidden md:ml-6 md:block">
                   <div className="flex flex-row-reverse text-right gap-6 ">
                     {navigation.map((item, index) => (
@@ -46,7 +62,7 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={
-                          "text-gray-900 font-meduim text-xl block hover:text-orange-500   font-meduim "
+                          "text-gray-900 font-bold text-xl block hover:text-orange-500   font-meduim "
                         }
                       >
                         {item.name}
@@ -58,19 +74,22 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
-            <div className="space-y-5 px-2 pb-3 pt-2 text-center z-50">
-              {navigation.map((item, index) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block text-gray-900 hover:text-orange-500 font-meduim "
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </Disclosure.Panel>
+          {open && (
+            <Disclosure.Panel className="absolute inset-0  top-20  pb-4  bg-white h-fit shadow-md  md:hidden">
+              <div className="space-y-5 px-2 pb-3 pt-2 text-center z-50">
+                {navigation.map((item, index) => (
+                  <Link
+                    onClick={() => setIsOpen(false)}
+                    key={item.name}
+                    href={item.href}
+                    className="block text-gray-900 text-xl hover:text-orange-500 font-bold "
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </Disclosure.Panel>
+          )}
         </>
       )}
     </Disclosure>

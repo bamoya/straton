@@ -12,15 +12,18 @@
       "name": "خدمات",
       "href": "#services"
     },
-
+    {
+      "name": "اراء الناس",
+      "href": "#testimonial"
+    },
     {
       "name": "اتصل بنا",
-      "href": "#contactus"
+      "href": "#contact"
     }
   ],
   "callToAction": {
     "text": "Get started",
-    "href": "#"
+    "href": "#contact"
   },
   "mainHero": {
     "title": "STRATON OAKMONT @Inc",
@@ -94,17 +97,17 @@
       {
         "name": "احمد الغندور",
         "description": "تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية  تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية",
-        "img": "/assets/images/adds.png"
+        "img": "/assets/images/profile1.png"
       },
       {
         "name": "احمد الغندور",
         "description": "تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية ",
-        "img": "/assets/images/design.png"
+        "img": "/assets/images/profile2.png"
       },
       {
         "name": "احمد الغندور",
         "description": "تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانيةتطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية  ",
-        "img": "/assets/images/store.png"
+        "img": "/assets/images/profile3.png"
       }
     ]
   },
@@ -139,8 +142,8 @@
     }
   },
   "cta": {
-    "title": "هل اتريد الاستفادة من خدماتنا",
-    "description": "تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية  تطوير ومراقبة حملاتك الاعلانية في جميع المنصات الاعلانية",
+    "title": "هل أنت مستعد للاستفادة من خدماتنا",
+    "subtitle": "! ماذا تنظر",
     "buttonAction": {
       "text": "اتصل بنا",
       "href": "#contact"
