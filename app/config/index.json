@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "straton",
+    "name": "STRATTON",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -26,7 +26,7 @@
     "href": "#contact"
   },
   "mainHero": {
-    "title": "STRATON OAKMONT @Inc",
+    "title": "STRATTON OAKMONT @Inc",
     "subtitle": "نحن هنا لتكبير ربح مشروعك",
     "description": "ﻓﻲ ﻗﻠﺐ اﻟﻤﻐﺮب، ﻛﺸﺮﻛﺔ Oakmant Stratton ﻧﺒﺘﻜﺮ اﺳﺘﺮاﺗﻴﺠﻴﺎت ﺗﺴﻮﻳﻖ ﻻ ﻣﺜﻴﻞ ﻟﻬﺎ ﺗﻀﻤﻦ ﺷﻴﺌﺎ واﺣﺪ ا - ﻧﺠﺎح ﻋﻤﻠﻚ اﻟﻘﺎﻃﺮ. ﻃﺮﻗﻨﺎ اﻟﻤﺠﺮﺑﺔ ﺳﺘﺤﻮل ﻣﺸﺮوﻋﻚ إﻟﻰ ﻣﻨﺎﺟﻢ ذﻫﺐ ﺣﻘﻴﻘﻴﺔ. ﻛﻦ ﺟﺎﻫﺰا ﻟﺜﻮرة ﻓﻲ ﻋﻤﻠﻚ ﻣﻊ أﻓﻀﻞ ﺷﺮﻛﺔ ﻓﻲ ﻫﺬا اﻟﻤﺠﺎل. اﻧﻀﻢ إﻟﻴﻨﺎ ﻓﻲ Oakmant Stratton واﺟﻌﻞ ﻛﻞ ﺧﻄﻮة ﻟﺪﻳﻚ ﻣﺮﺑﺤﺔ!",
     "img": "/assets/images/hero-banner.png",

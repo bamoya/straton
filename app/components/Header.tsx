@@ -39,11 +39,11 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-between px-2 ">
-                <BiSearch className="block sm:hidden h-10 w-10 text-gray-900" />
+              <div className="w-full flex items-center">
+                <BiSearch className="block md:hidden h-10 w-10 text-gray-900" />
                 <Link
                   href="/"
-                  className="flex flex-shrink-0 gap-2 items-center"
+                  className="absolute left-[50%] translate-x-[-50%] md:translate-x-0 md:left-0 flex flex-shrink-0 gap-2 items-center"
                 >
                   <img
                     className="h-16 w-auto"
@@ -54,8 +54,8 @@ export default function Header() {
                     {company.name}
                   </h1> */}
                 </Link>
-                <div></div>
-                <div className="hidden md:ml-6 md:block">
+
+                <div className="hidden absolute right-0 md:ml-6 md:block">
                   <div className="flex flex-row-reverse text-right gap-6 ">
                     {navigation.map((item, index) => (
                       <Link

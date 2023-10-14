@@ -23,8 +23,9 @@ const Hero = () => {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <h1 className="title-font font-bold  text-center  sm:text-5xl text-4xl mb-4 text-gray-900 w-full md:text-right">
-            <span className="text-base  font-bold sm:text-xl mb-3 inline-block ">
-              {mainHero.title}
+            <span className="text-xl  font-bold sm:text-xl mb-3 inline-block ">
+              STRATTON <br className="block md:hidden" />
+              OAKMONT @Inc
             </span>
             <br />
             {mainHero.subtitle}

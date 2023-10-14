@@ -3,7 +3,10 @@ import config from "@/app/config/index.json";
 import ContactCards from "./ContactCards";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
+import { useState } from "react";
 import axios from "axios";
+import { MultiSelect } from "react-multi-select-component";
+import Select from "react-select";
 
 type FormValues = {
   fullName: string;
@@ -11,18 +14,38 @@ type FormValues = {
   email: string;
   projectName: string;
   projectType: string;
-  service: string;
+  // service: string;
   message: string;
 };
 
 const Contactus = () => {
   const contact = config.contact;
   const form = useForm<FormValues>();
+  const [selectedServices, setSelectedServices] = useState([]);
+  const [selectedProject, setSelectedProject] = useState("");
+
+  const projectOptions = contact.projectInput.options.map((item) => {
+    return { label: item, value: item };
+  });
+
+  const serivceOptions = contact.serviceInput.options.map((item) => {
+    return { label: item, value: item };
+  });
+
+  const handleServicesChange = (options: any) => {
+    setSelectedServices(options);
+  };
+
+  const handleProjectChange = (option: any) => {
+    setSelectedProject(option.value);
+  };
 
   const { register, control, handleSubmit, formState } = form;
+
   const { errors } = formState;
-  const onSubmit = async (data: FormValues) => {
-    // console.log("subbmited", data);
+
+  const onSubmit = async ({ ...data }) => {
+    console.log("subbmited", data);
     const rawResponse = await fetch("/api/submit", {
       method: "POST",
       headers: {
@@ -146,29 +169,31 @@ const Contactus = () => {
                 {/* <label className="leading-7 text-sm text-gray-600">
                   {contact.projectInput.title}
                 </label> */}
-                <select
+                <Select
                   id="projectType"
-                  {...register("projectType", {
-                    required: "اختر نوع المشروع",
-                  })}
-                  className="h-10 w-full text-right bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                >
-                  <option
-                    className="w-full text-right bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    value=""
-                  >
-                    {contact.projectInput.title}
-                  </option>
-                  {contact.projectInput.options.map((option, idx) => (
-                    <option
-                      className="w-full text-right bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
-                      key={idx}
-                      value={option}
-                    >
-                      {option}
-                    </option>
-                  ))}
-                </select>
+                  placeholder="اختر نوع المشروع"
+                  options={projectOptions}
+                  onChange={(value) => handleProjectChange(value)}
+                  className="basic-multi-select"
+                  styles={{
+                    control: (styles, state) => ({
+                      ...styles,
+                      backgroundColor: "#fbf9f9",
+
+                      border: state.isFocused
+                        ? "1px solid rgb(249 115 22)"
+                        : "",
+                      outline: state.isFocused
+                        ? "2px solid rgb(254 215 170)"
+                        : "",
+                      "&:hover": {
+                        border: "default",
+                      },
+                    }),
+                  }}
+                  classNamePrefix="select"
+                />
+
                 {errors?.projectType && (
                   <p className="text-red-600 pt-2">
                     {errors?.projectType?.message}
@@ -177,11 +202,11 @@ const Contactus = () => {
               </div>
             </div>
 
-            <div className="p-2 w-full sm:w-1/2 max-w-sm">
+            {/* <div className="p-2 w-full sm:w-1/2 max-w-sm">
               <div className="relative text-right">
-                {/* <label className="leading-7 text-sm text-gray-600">
+                 <label className="leading-7 text-sm text-gray-600">
                   {contact.serviceInput.title}
-                </label> */}
+                </label> 
                 <select
                   id="service"
                   {...register("service", {
@@ -210,6 +235,35 @@ const Contactus = () => {
                     {errors?.service?.message}
                   </p>
                 )}
+              </div>
+            </div> */}
+            <div className="p-2 w-full sm:w-1/2 max-w-sm">
+              <div className="relative text-right">
+                <Select
+                  isMulti
+                  name="service"
+                  placeholder="اختر نوع الحزمة"
+                  options={serivceOptions}
+                  onChange={handleServicesChange}
+                  className="basic-multi-select"
+                  styles={{
+                    control: (styles, state) => ({
+                      ...styles,
+                      backgroundColor: "#fbf9f9",
+
+                      border: state.isFocused
+                        ? "1px solid rgb(249 115 22)"
+                        : "",
+                      outline: state.isFocused
+                        ? "2px solid rgb(254 215 170)"
+                        : "",
+                      "&:hover": {
+                        border: "default",
+                      },
+                    }),
+                  }}
+                  classNamePrefix="select"
+                />
               </div>
             </div>
 
