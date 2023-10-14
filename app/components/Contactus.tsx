@@ -251,10 +251,11 @@ const Contactus = () => {
                   placeholder="اختر نوع الحزمة"
                   options={serivceOptions}
                   onChange={handleServicesChange}
-                  className="basic-multi-select"
+                  className="basic-multi-select text-right"
                   styles={{
                     control: (styles, state) => ({
                       ...styles,
+
                       backgroundColor: "#fbf9f9",
 
                       border: state.isFocused
@@ -271,6 +272,14 @@ const Contactus = () => {
                       return {
                         ...defaultStyles,
                         color: "rgb(156 163 175)",
+                      };
+                    },
+
+                    valueContainer: (defaultStyles) => {
+                      return {
+                        ...defaultStyles,
+                        flexDirection: "row-reverse",
+                        textAlign: "right",
                       };
                     },
                   }}
