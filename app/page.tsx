@@ -9,13 +9,11 @@ import CTA from "./components/CTA";
 export default function Home() {
   return (
     <div className=" font-messiri">
-      <Header />
       <Hero />
       <Services />
       <CTA />
       <Testimonial />
       <Contactus />
-      <Footer />
     </div>
   );
 }
