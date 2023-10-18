@@ -5,7 +5,7 @@ const nextConfig = {
       {
         source: "/api/save-data",
         destination:
-          "https://script.google.com/macros/s/AKfycbyg4AXuSxyvRJk5_yBDFso6EMelWD5SUMnGWExaPswP0QL7N1hU_u4Kkjh3Qz9_d6MW/exec",
+          "https://script.google.com/macros/s/AKfycbxCkryxXjR1J8cohnGYE3ufdlj5At1IFcwSBqgZ9LiK_UYuBaUWH7QMg5I5TXUYuGte6A/exec",
       },
     ];
   },
