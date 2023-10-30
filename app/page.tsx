@@ -8,7 +8,7 @@ import CTA from "./components/CTA";
 
 export default function Home() {
   return (
-    <div className=" font-messiri">
+    <div className="font-messiri">
       <Hero />
       <Services />
       <CTA />

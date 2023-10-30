@@ -11,14 +11,14 @@ export default function Header() {
   const company = config.company;
   const [isopen, setIsOpen] = useState<boolean>(false);
   return (
-    <Disclosure as="nav" className="bg-white shadow-sm">
-      {({ open }) => (
+    <Disclosure as="nav" className="bg-white shadow-sm sticky py-5 z-50 top-0">
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-center">
-              <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+              <div className="absolute inset-y-0 right-2 flex items-center md:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center border border-gray-300 hover:border-gray-500 justify-center rounded-md p-2 text-gray-500 hover:text-gray-900 ">
+                <Disclosure.Button className="relative px-2 inline-flex items-center border border-gray-300 hover:border-gray-500 justify-center rounded-md p-2 text-gray-500 hover:text-gray-900 ">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -29,9 +29,9 @@ export default function Header() {
                       />
                     </div>
                   ) : (
-                    <div onClick={() => setIsOpen(!isopen)}>
+                    <div onClick={() => close()}>
                       <HiBars3
-                        onClick={() => setIsOpen(!isopen)}
+                        onClick={() => close()}
                         className="block h-6 w-6"
                         aria-hidden="true"
                       />
@@ -39,7 +39,7 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="w-full flex items-center">
+              <div className="w-full flex px-2 items-center">
                 <BiSearch className="block md:hidden h-10 w-10 text-gray-900" />
                 <Link
                   href="/"
@@ -55,14 +55,14 @@ export default function Header() {
                   </h1> */}
                 </Link>
 
-                <div className="hidden absolute right-0 md:ml-6 md:block">
+                <div className="hidden absolute right-0  md:ml-6 md:block">
                   <div className="flex flex-row-reverse text-right gap-6 ">
                     {navigation.map((item, index) => (
                       <Link
                         key={item.name}
                         href={item.href}
                         className={
-                          "text-gray-900 font-bold text-xl block hover:text-orange-500   font-meduim "
+                          "text-gray-900 font-bold text-2xl block hover:text-orange-500   font-meduim "
                         }
                       >
                         {item.name}
@@ -75,11 +75,11 @@ export default function Header() {
           </div>
 
           {open && (
-            <Disclosure.Panel className="absolute inset-0  top-20  pb-4  bg-white h-fit shadow-md  md:hidden">
+            <Disclosure.Panel className="absolute inset-0  top-20    px-2 py-3 bg-white h-fit shadow-md  md:hidden">
               <div className="space-y-5 px-2 pb-3 pt-2 text-center z-50">
                 {navigation.map((item, index) => (
                   <Link
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => close()}
                     key={item.name}
                     href={item.href}
                     className="block text-gray-900 text-xl hover:text-orange-500 font-bold "

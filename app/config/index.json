@@ -21,10 +21,7 @@
       "href": "#contact"
     }
   ],
-  "callToAction": {
-    "text": "Get started",
-    "href": "#contact"
-  },
+
   "mainHero": {
     "title": "STRATTON OAKMONT @Inc",
     "subtitle": "نحن هنا لتكبير ربح مشروعك",
@@ -33,27 +30,9 @@
     "buttonAction": {
       "text": "اتصل بنا",
       "href": "#contact"
-    },
-    "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
     }
   },
-  "product": {
-    "title": "React landing page 2021",
-    "items": [
-      {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
-      },
-      {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/product2.jpg"
-      }
-    ]
-  },
+
   "services": {
     "title": "اﻟﺨﺪﻣﺎت اﻟﺘﻲ ﻧﻘﺪﻣﻬﺎ",
     "description": "ﺷﺎﻫﺪ ﻛﻴﻒ ﺗﺮﺗﻔﻊ ﺧﺪﻣﺎﺗنا أرﺑﺎﺣﻚ إلى ﻣﺴﺘﻮﻳﺎت ﻏﻴﺮ ﻣﺴﺒﻮﻗﺔ ﺑﺎﺳﺘﺨﺪام ﺗﻘنبات اﻟﺘﺴﻮﻳﻖ اﻟﺨﺒﻴﺮة لدينا",
@@ -149,30 +128,7 @@
       "href": "#contact"
     }
   },
-  "about": {
-    "sections": [
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      }
-    ]
-  },
+
   "socialMedia": {
     "instagram": "https://www.instagram.com/stratton.oakamont/",
     "facebook": "https://www.facebook.com/profile.php?id=100066758509222"
